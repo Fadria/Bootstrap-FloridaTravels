@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta name="viewport" charset="utf-8">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ </head>
+
+  <body class="col-md-12">
+  
+
+    <header>
+      <img src="Imagenes/Logotipo.png" class="img-responsive" id="logotipo" 
+      alt="logo de Florida Travels,unos edificions en el mar con una raya que simboliza el sol por arriba"></img>
+    </header>
+
+    <nav id="barraNavegacion" class="navbar navbar-default container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="inspiraciones.html">Inspiraciones</a></li>
+          <li><a href="informacion.html">Información</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav idiomas">
+          <li><a href="index.html"><img class="botonidiomas" alt="icono español" src="Imagenes/español.png"></a></li>
+          <li><a href="indexEN.html"><img class="botonidiomas" alt="icono ingles" src="Imagenes/inglés.png"></a></li>
+        </ul>
+    </nav>
+
+      <main class="container">
+
+        <article class="jumbotron" id="mensajeInicio">
+          <h1>Quienes somos</h1>
+          <p>Florida Travels, una empresa que lleva ofreciendo los mejores viajes desde 2017, nuestros clientes disfrutan de los mejores viajes disponibles en el mercado,si quieres conocernos o hablar con nosotros en privado puedes visitar nuestras oficinas, nos puedes localizar en el mapa</p>
+        </article>
+
+        <article id="map" class="col-md-5" style="height:400px;"></article>
+
+          <script>
+          function myMap() {
+              var mapOptions = {
+                  center: new google.maps.LatLng(51.5, -0.12),
+                  zoom: 10,
+                  mapTypeId: google.maps.MapTypeId.HYBRID
+              }
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          }
+          </script>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        <form class="col-md-5" id="contacto">
+          <legend>Formulario de contacto</legend>
+          <textarea placeholder="Escriba su mensaje" tabindex="1"></textarea>
+          <label for="email"></label>
+          <input type="email" placeholder="Escriba su email" tabindex="2" class="form-control" id="email"></input>
+          <input type="submit" tabindex="3" value="Enviar"></input>
+        </form>       
+      </main>
+
+      <footer class="row">
+
+        <nav class="col-md-4">
+          <p class="seccionFooter">Redes</p>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Google +</a>
+          <a href="">Tumblr</a>
+        </nav>
+
+        <aside class="col-md-4">
+          <p class="seccionFooter">Información</p>
+          <p>Esta web ha sido realizada por Federico Adrià Carrasco como actividad final de Diseño de Interfaces</p>
+        </aside>
+
+        <aside class="col-md-4">
+          <p class="seccionFooter">Copyright</p>
+          <img alt="licencia creative commons,puedes copiar y distribuir el trabajo" src="Imagenes/Licencia.png">
+        </aside>
+      </footer>
+  </body>
+
+  </html>
+</html>

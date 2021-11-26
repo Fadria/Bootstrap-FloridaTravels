@@ -1,0 +1,90 @@
+body *{
+	margin-top: 5px;
+	font-family: sans-serif;
+}
+header{
+	text-align: center;
+}
+
+#logotipo{
+	margin: 0 auto;
+}
+
+#mensajeInicio{
+	color: white;
+	background-color: #1AC8ED;
+}
+
+#contacto{
+	background-color: #1AC8ED;
+	border: 1px solid #235789;
+	float: right;
+	padding:5px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 25px;
+	border-top: 2px solid #235789;
+	background-color: #235789;
+	color: white;
+	padding: 5px;
+}
+
+.botonidiomas{
+	width: 25px;
+	height: 25px;
+}
+
+.idiomas{
+	float: right;
+	display: inline;
+}
+
+footer a{
+	display: block;
+	color: white;
+}
+
+.seccionFooter{
+	font-size:18px;
+}
+
+footer a:hover{
+	color:grey;
+}
+
+#mapa{
+	height: 500px;
+}
+
+.inspiracion{
+	height: 300px;
+	width: 100%;
+}
+
+.seccionInspiracion{
+	text-align: center;
+}
+
+#america{
+	height: 400px;
+}
+
+.paises{
+	height: 200px;
+}
+
+.viaje{
+	height: 500px;
+}
+
+.extraviaje{
+	background-color: #1AC8ED;
+	border: 1px solid #235789;
+	color: white;
+}
+
+.infoViaje{
+	margin-top: 15px;
+}
